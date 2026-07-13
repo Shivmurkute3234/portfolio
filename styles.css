@@ -1,0 +1,164 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    min-height: 60vh;
+}
+
+/* =========================
+   HEADER & NAVIGATION
+========================= */
+header {
+    background: #1e293b;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header h2 {
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 18px;
+    color: #cbd5e1;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #0f172a;
+    padding: 15px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #38bdf8;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   CARDS & SECTIONS
+========================= */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+.project-card, .exp-card, .edu-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.project-card:hover, .exp-card:hover, .edu-card:hover {
+    transform: translateY(-3px);
+}
+
+.edu-card { border-left: 5px solid #38bdf8; }
+.exp-card { border-left: 5px solid #1e293b; }
+
+.exp-card ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.exp-card li {
+    margin-bottom: 8px;
+}
+
+/* =========================
+   PROFESSIONAL FORM
+========================= */
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    font-family: inherit;
+}
+
+.contact-form button {
+    background: #1e293b;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #38bdf8;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #38bdf8;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    nav { flex-direction: column; text-align: center; }
+    nav a { margin: 10px 0; }
+}
